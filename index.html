@@ -1,0 +1,184 @@
+<!-- semantic tags: tags descriptive by itself; used for structuring web app; improves readability -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavya's Resume</title>
+</head>
+<body>
+
+    <!-- a : anchor tag; for links -->
+    <!-- Color : blue to purple -->
+    <!-- cursor becomes hand like icon -->
+    <!-- href : hyper reference; path or link to go to -->
+    <a href="https://www.google.com/">Click Here!</a>
+
+    <!-- Header starts here -->
+    <!-- header: semantic tag -->
+    <header>
+        <table>
+        <tr>
+            <td>
+                <a href="https://www.google.com/"><img 
+                style="float: left;"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9uIZ5PTcDHF1xgcacdCDleCnqGQkg21Ey9w&s" 
+                alt="Bhavya's Profile Picture"
+                width="300"></a>
+            </td>
+            <td>
+                <h1>Bhavya Sharma</h1>
+                <p><i>A passionate full stack web developer</i></p>
+                <p>I ❤️ <a href="https://www.google.com/" target="_blank"><strong>web development</strong></a> & learning to build websites🚀</p> 
+                <!-- windows + '.' = emojis -->
+                <!-- target : default = _self : change to _blank to load site on new page -->
+                <a href="#connectWithMe"><p>Connect With Me</p></a>
+                <!-- To surf within same page, place hashed id in href of a tag -->
+                <ul>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#workExperience">Work Experience</a></li>
+                    <li><a href="#projectDetails">Project Details</a></li>
+                </ul>   
+            </td>
+        </tr>
+    </table>
+    </header>
+    <!-- Header ends here -->
+
+    <hr>
+
+    <!-- Main section starts here -->
+    <!-- only one main tag is used in a page -->
+    <main>
+        <section id="education">
+            <h2>Education:</h2>
+            <table border="">
+                <tr>
+                    <th>COURSE</th>
+                    <th>UNIVERSITY</th>
+                    <th>YEAR</th>
+                    <th>RESULT</th>
+                </tr>
+    
+                <tr>
+                    <td>BTech in CSE-AI</td>
+                    <td>GLBITM</td>
+                    <td>2028</td>
+                    <td>9.99 CGPA</td>
+                </tr>
+        
+                <tr>
+                    <td>12<sup>th</sup></td>
+                    <td>LPS</td>
+                    <td>2023</td>
+                    <td>94.2%</td>
+                </tr>
+    
+                <tr>
+                    <td>10<sup>th</sup></td>
+                    <td>LPS</td>
+                    <td>2021</td>
+                    <td>94.5%</td>
+                </tr>
+    
+            </table>
+        </section>
+
+        <section id="workExperience">
+            <h2>Work Experience:</h2>
+            <ul>
+                <li>
+                    <article id="oracle">
+                    <p><strong>Oracle Limited</strong></p>
+                    <p><i>Technology Analyst</i></p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    </ul>
+                    </article>
+                </li>
+                <li>
+                    <article id="devTown">
+                    <p><strong>DevTown Limited</strong></p>
+                    <p><i>Full Stack Trainer - Team Lead</i></p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    </ul>
+                    </article>
+                </li>
+                <li>
+                    <article id="infosys">
+                    <p><strong>Infosys</strong></p>
+                    <p><i>Angular Developer</i></p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    </ul>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projectDetails">
+            <h2>Project Details:</h2>
+            <ul>
+                <li>
+                    <article id="zomatoClone">
+                        <a href="https://www.google.com/">Zomato Clone</a>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque accusantium corrupti, a 
+                                fugiat ea exercitationem ipsa libero vero. Aliquam, velit?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt quod voluptate 
+                                sunt nostrum mollitia?
+                            </li>
+                        </ul>
+                    </article>
+                </li>
+                <li>
+                    <article id="bookMyShowClone">
+                        <a href="https://www.google.com/">BookMyShow Clone</a>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, assumenda.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque labore veniam deleniti</li>
+                        </ul>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <aside>
+            <!-- does not guarantee alignment of content to left or right, we need css -->
+        </aside>
+    </main>
+    <!-- Main section ends here -->
+
+    <footer>    
+        <h2 id="connectWithMe">Connect With Me:</h2>
+        <p>Email: <a href="mailto:abc@gmail.com">abc@gmail.com</a></p> <!-- mailto : HTTPS protocol to send email to the given email address -->
+        <a href="tel:+919873826392">9873826392</a> <!-- tel : protocol to open the number with country code in desired calling app -->
+        <p>Github: <a href="https://www.google.com/">github/abc</a></p>
+        <p>LinkedIn: linkedinabc-123</p>
+        <a href="#"><p>About Us</p></a>
+        <a href="/WEB DEVELOPMENT/aboutUs.html" target="_blank">New About Us</a>
+        <!-- use absolute file path, relative address, file name, etc in the href to load a file in link -->
+        <!-- when no URL known to place or need dummy URL; use # to reload the same page -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolores dignissimos porro natus pariatur 
+            obcaecati qui quod quasi sapiente perspiciatis provident autem beatae rem id similique exercitationem nam 
+            atque veritatis soluta, doloremque tempora recusandae? Accusantium maxime quia asperiores necessitatibus 
+            voluptatum fugiat possimus quisquam quae a. Voluptatum, optio? Voluptate repellendus maiores et quaerat 
+            deserunt voluptatem hic a doloribus esse magnam modi, sunt fugiat non obcaecati illo tempore! Incidunt 
+            itaque saepe veritatis quia fugit illo sint, debitis doloremque unde atque, nesciunt amet dolorem laborum 
+            iusto impedit neque velit quis, aliquid veniam iste sunt? Nihil dolor explicabo, odio adipisci atque ex 
+            optio sunt.
+        </p>
+        <a href="#">Back to Top</a>
+    </footer>
+</body>
+</html>
